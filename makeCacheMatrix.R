@@ -1,13 +1,15 @@
+# define my function here
 makeCacheMatrix <- function(x = matrix()) {
-
+# create an empty object
   invMatrix <- NULL
   
   set <- function(y) {
+    # cache x as y
     x <<- y
     invMatrix <<- NULL
   }
   
-
+# get function
   get <- function() x
   
   setinverseMatrix <- function(invMatrixerse) invMatrix <<- invMatrixerse
